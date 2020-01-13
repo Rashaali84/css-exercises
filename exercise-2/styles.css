@@ -49,10 +49,27 @@ body {
 }
 #card-container .card_title
 {
- height:auto;
+ height:6vh;
  width:30vh;
  float:left;
  position:relative;
+ text-align: left;
+}
+.card_subtitle{
+padding:0;
+margin:0;
+  color: rgb(136, 127, 127);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  text-align: left;
+}
+.card_special
+{
+  text-align:left;
+  color:yellow;
+  font-size:10px;
+
+
 }
 #card-container .card_desc
 {
