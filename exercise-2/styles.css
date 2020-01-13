@@ -7,3 +7,76 @@ body {
 * {
   box-sizing: border-box;
 }
+#card-container
+{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns: repeat(2,380px);
+  grid-gap:30px;
+ margin-left: 100px;
+  
+  
+}
+#card-container .card
+{
+  
+  box-shadow: 0px 1px 5px #555;
+  background-color: white;
+  align-content: center;
+  text-align: center;
+  height: 60vh;
+  
+  
+}
+#card-container .card_img
+{
+
+  float:left ;
+  width:3vh;
+  position: relative;
+  font-size: smaller;
+  color:yellow;
+ 
+  
+}
+#card-container .card_thum
+{
+  float:left ;
+  width:5vh;
+  height: 5vh;
+  position: relative;
+
+}
+#card-container .card_title
+{
+ height:auto;
+ width:30vh;
+ float:left;
+ position:relative;
+}
+#card-container .card_desc
+{
+   margin:40px;
+  padding-top: 40px;
+  width:auto;
+  text-align: left;
+  height:30vh;
+
+}
+.btn {
+  border: none; /* Remove borders */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  float:right;
+  margin-top: 5px;
+  
+  width:25vh;
+  margin: 5px;
+  bottom: 0;
+  display: absolute;
+}
+
+.ok {background-color: #2196F3;color:white;} /* Blue */
+.ok:hover {background: #0b7dda;}
+.nope {background-color:gray;color:black ;} /* Blue */
+.nope:hover {background: #0b7dda;}
