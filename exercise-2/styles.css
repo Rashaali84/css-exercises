@@ -90,6 +90,7 @@ body {
   margin: 5px;
   bottom: 0;
   display: absolute;
+  border-radius: 12px;
 }
 
 .ok {background-color: #2196F3;color:white;} /* Blue */
