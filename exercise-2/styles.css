@@ -1,22 +1,26 @@
 /* The only reset you’ll ever need */
 
+/*General*/
+
 body {
-  margin: 0;
+   font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4; /* hexidecimal for gray */
 }
 
-* {
-  box-sizing: border-box;
-}
+
+/*Card container style , display grid model with a repeat of 2 cards per row of width 390 and a gap of 30px o*/
 #card-container
 {
   margin-top:20px;
   display:grid;
-  grid-template-columns: repeat(2,380px);
+  grid-template-columns: repeat(2,390px);
   grid-gap:30px;
- margin-left: 100px;
-  
+  margin-left: 100px;
   
 }
+/*Style card */
 #card-container .card
 {
   
@@ -24,26 +28,28 @@ body {
   background-color: white;
   align-content: center;
   text-align: center;
-  height: 60vh;
-  
+  height: 69vh;
   
 }
-#card-container .card_img
+/*span for star image*/
+.card_span
 {
-
-  float:left ;
-  width:3vh;
-  position: relative;
-  font-size: smaller;
-  color:yellow;
+  vertical-align: sub;
+  font-size: 10px;
+  color:rgb(212, 176, 14);
  
-  
+}
+.card_img
+{
+  width:9px; 
+  height:9px;
+
 }
 #card-container .card_thum
 {
   float:left ;
   width:5vh;
-  height: 5vh;
+  height:5vh;
   position: relative;
 
 }
@@ -56,25 +62,18 @@ body {
  text-align: left;
 }
 .card_subtitle{
-padding:0;
-margin:0;
+  padding:0;
+  margin:0;
   color: rgb(136, 127, 127);
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
   text-align: left;
 }
-.card_special
-{
-  text-align:left;
-  color:yellow;
-  font-size:10px;
-
-
-}
+/*Description style for middle text*/
 #card-container .card_desc
 {
-   margin:40px;
-  padding-top: 40px;
+   margin:30px;
+  padding-top: 30px;
   width:auto;
   text-align: left;
   height:30vh;
@@ -86,7 +85,6 @@ margin:0;
   cursor: pointer; /* Add a pointer cursor on mouse-over */
   float:right;
   margin-top: 5px;
-  
   width:25vh;
   margin: 5px;
   bottom: 0;
