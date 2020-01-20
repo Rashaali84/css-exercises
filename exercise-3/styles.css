@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -44,7 +43,7 @@ ul {
   text-align: center;
   position: relative;
 }
-/*we will use labels to check radio buttons*/
+/*I will use labels to check radio buttons*/
 label {
   background: black;
   padding: 15px;

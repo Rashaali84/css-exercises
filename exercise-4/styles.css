@@ -93,20 +93,21 @@ body {
 }
 
 figure {
-  max-height: 28em;
+  height: 28em; /*use fixed height 
+  so figure box will have a fixed
+   space to load in it without moving the header
+    down in case of slow connection*/
   margin-bottom: 0;
   margin-left: -10em;
   margin-right: -10em;
   margin-top: 0;
   overflow: hidden;
 }
-
 figure img {
   max-width: 100%;
   object-fit: cover;
   object-position: center center;
 }
-
 article {
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +118,7 @@ article {
 
 article h1 {
   background-color: white;
-  font-family: "Domaine Display";
+  font-family: "Domaine Display", Georgia, serif; /*use fall-back font*/
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 700;
