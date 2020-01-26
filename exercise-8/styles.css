@@ -15,9 +15,9 @@ main {
 .ratio {
   background-color: rgb(61, 129, 92);
   box-shadow: 0 0 0 1px white;
-  height: 0;
   position: relative;
-  width: 100%;
+  display: flex;
+  flex: 1;
 }
 
 .ratio::after {
@@ -30,20 +30,39 @@ main {
 }
 
 .block {
+  display: flex;
+  min-height: 50vh;
+  justify-content: center;
+}
+.ratio__1-1 {
+  flex: 1 0 10px; /*(shrink-grow-base)*/
 }
 
 .ratio__1-1::after {
   content: "1:1";
 }
-
+.ratio__2-1 {
+  flex: 2 0 10px;
+}
 .ratio__2-1::after {
   content: "2:1";
 }
-
+.ratio__2-3 {
+  flex: 1 1 10px;
+}
 .ratio__2-3::after {
   content: "2:3";
 }
-
+.ratio__3-2 {
+  flex: 1 1 10px;
+}
 .ratio__3-2::after {
   content: "3:2";
+  flex: 1 1 10px;
+}
+.ratio__16-9 {
+  flex: 1 0 10px;
+  align-content: stretch;
+  min-height: 100vh;
+  min-width: min-content;
 }
